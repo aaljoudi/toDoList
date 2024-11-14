@@ -67,9 +67,13 @@ int main() {
      * each elemnt in allTasks. The 'auto' allows the compiler to 
      * automatically discern the type of t based on the elements in allTasks
      * which is a vector<string>. */
-    for (const auto &t : allTasks) {
-        outFile << t << endl;
-    }
+    // for (const auto &t : allTasks) {
+    //     outFile << t << endl;
+    // }
+
+    for (vector<string>::const_iterator it = allTasks.begin(); it != allTasks.end(); ++it) {
+    outFile << *it << endl;
+}
     outFile.close();
 
     return 0;
