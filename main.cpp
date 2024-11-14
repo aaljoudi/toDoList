@@ -10,8 +10,8 @@ using namespace std;
 void showTasks(const vector<string> &allTasks) {
     cout << "To-Do List:" << endl;
 
-    for (int i = 1; i <= allTasks.size(); ++i) {
-        cout << i << ". " << allTasks[i] << endl;
+    for (int i = 0; i < allTasks.size(); ++i) {
+        cout << i + 1 << ". " << allTasks[i] << endl;
     }
 }
 
